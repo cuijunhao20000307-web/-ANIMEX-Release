@@ -2,6 +2,8 @@
   "version": "0.9.0",
   "tag": "v0.9.0",
   "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/raw/main/ANIMEX-0.9.0.nro",
+  "download_url_global": "https://raw.githubusercontent.com/cuijunhao20000307-web/-ANIMEX-Release/main/ANIMEX-0.9.0.nro",
+  "download_url_cn": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/raw/main/ANIMEX-0.9.0.nro",
   "release_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/tag/v0.9.0",
   "notes": "ANIMEX 0.9.0",
   "mandatory": false
