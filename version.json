@@ -1,8 +1,8 @@
 {
-  "version": "0.8.9",
-  "tag": "v0.8.9",
-  "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/raw/main/ANIMEX-0.8.9.nro",
-  "release_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/tag/v0.8.9",
-  "notes": "ANIMEX 0.8.9",
+  "version": "0.9.0",
+  "tag": "v0.9.0",
+  "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/raw/main/ANIMEX-0.9.0.nro",
+  "release_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/tag/v0.9.0",
+  "notes": "ANIMEX 0.9.0",
   "mandatory": false
 }
