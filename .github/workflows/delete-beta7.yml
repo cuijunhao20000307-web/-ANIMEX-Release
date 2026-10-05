@@ -1,0 +1,22 @@
+name: Delete Beta7 release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: contains(github.event.head_commit.message, '[delete-beta7]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete Beta7 release and tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release delete 1.0.0-beta.7 --repo "$GITHUB_REPOSITORY" --cleanup-tag --yes || true
