@@ -1,21 +1,5 @@
 [
   {
-    "version": "1.0.0",
-    "channel": "stable",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0/ANIMEX-1.0.0.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "1.0.0 stable"
-  },
-  {
-    "version": "0.9.9",
-    "channel": "stable",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.9/ANIMEX-0.9.9.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "0.9.9 stable"
-  },
-  {
     "version": "0.9.8",
     "channel": "stable",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.8/ANIMEX-0.9.8.nro",
