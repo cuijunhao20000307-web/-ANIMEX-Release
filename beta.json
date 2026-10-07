@@ -1,16 +1,16 @@
 [
   {
-    "version": "1.0.0-beta.19",
+    "version": "1.0.1-beta.1",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.19/ANIMEX-1.0.0-beta.19.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.1-beta.1/ANIMEX-1.0.1-beta.1.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
   },
   {
-    "version": "0.1.0-beta.19",
+    "version": "1.0.0-beta.19",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.1.0-beta.19/ANIMEX-0.1.0-beta.19.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.19/ANIMEX-1.0.0-beta.19.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
@@ -56,17 +56,17 @@
     "notes": "Beta test build"
   },
   {
-    "version": "1.0.0-beta.12",
+    "version": "1.0.0-beta.13",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.12/ANIMEX-1.0.0-beta.12.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.13/ANIMEX-1.0.0-beta.13.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
   },
   {
-    "version": "1.0.0-beta.13",
+    "version": "1.0.0-beta.12",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.13/ANIMEX-1.0.0-beta.13.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.0-beta.12/ANIMEX-1.0.0-beta.12.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
@@ -160,6 +160,14 @@
     "notes": "Beta test build"
   },
   {
+    "version": "0.9.9",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.9/ANIMEX-0.9.9.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "Beta test build"
+  },
+  {
     "version": "0.9.9-beta.4",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.9-beta.4/ANIMEX-0.9.9-beta.4.nro",
@@ -184,17 +192,17 @@
     "notes": "Beta test build"
   },
   {
-    "version": "0.9.9",
+    "version": "0.9.8-beta.1",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.9/ANIMEX-0.9.9.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.8-beta.1/ANIMEX-0.9.8-beta.1.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
   },
   {
-    "version": "0.9.8-beta.1",
+    "version": "0.1.0-beta.19",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.9.8-beta.1/ANIMEX-0.9.8-beta.1.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/0.1.0-beta.19/ANIMEX-0.1.0-beta.19.nro",
     "download_url_cn": "",
     "download_url_backup": "",
     "notes": "Beta test build"
