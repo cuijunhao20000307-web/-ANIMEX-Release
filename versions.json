@@ -1,5 +1,13 @@
 [
   {
+    "version": "1.0.2",
+    "channel": "stable",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.2/ANIMEX-1.0.2.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.2 stable"
+  },
+  {
     "version": "1.0.1",
     "channel": "stable",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.1/ANIMEX-1.0.1.nro",
