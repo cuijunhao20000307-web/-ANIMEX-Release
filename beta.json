@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.4-beta.19",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.4-beta.19/ANIMEX-1.0.4-beta.19.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "Beta test build",
+    "sha256": "437cc252bf7350d893ad326ee5cdb7733ba2a067bee8c3034808d2b8a50838ef"
+  },
+  {
     "version": "1.0.4-beta.18",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.4-beta.18/ANIMEX-1.0.4-beta.18.nro",
