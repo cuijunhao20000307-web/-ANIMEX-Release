@@ -1,7 +1,8 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "channel": "stable",
-  "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.3/ANIMEX-1.0.3.nro",
+  "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.4/ANIMEX-1.0.4.nro",
   "download_url_cn": "",
-  "download_url_backup": ""
+  "download_url_backup": "",
+  "sha256": "5889d77c88dd7e50b534b971e4d9b21e4418ea404972fdb25aecfa9d76c0e630"
 }
