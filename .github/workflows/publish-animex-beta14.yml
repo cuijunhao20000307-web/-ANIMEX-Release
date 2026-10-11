@@ -5,6 +5,7 @@ name: Publish ANIMEX 1.0.6 Beta14 online update
       - main
     paths:
       - .github/workflows/publish-animex-beta14.yml
+      - beta14-publish.trigger
 permissions:
   contents: write
 concurrency:
