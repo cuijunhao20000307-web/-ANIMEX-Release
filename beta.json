@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-beta.16",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.16/ANIMEX-1.0.6-beta.16.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "SK电影端快进无分片等待优化、目标帧卡死恢复保护；保留国内运营商优化（Beta16测试）",
+    "sha256": "2fa9d1d30b3c60f24d80ae11f4f72dca5d59a2af56b44b9eedb63594141050ea"
+  },
+  {
     "version": "1.0.6-beta.15",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.15/ANIMEX-1.0.6-beta.15.nro",
