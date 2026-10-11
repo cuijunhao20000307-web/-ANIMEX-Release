@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-RC6",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC6/ANIMEX-1.0.6-RC6.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "RC6（测试版）：韩国 SK／KANJU 电影端播放中途停帧与 HLS 缓冲恢复优化；仍需实机验证。保留 RC5 中国移动动漫修复；RC4 与 Stable 不变。",
+    "sha256": "6f8de5c9da9328417e93225533e285127a670af7cfb4241c4ea05010e5925eac"
+  },
+  {
     "version": "1.0.6-RC5",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC5/ANIMEX-1.0.6-RC5.nro",
