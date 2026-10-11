@@ -1,0 +1,61 @@
+name: Publish ANIMEX 1.0.6 RC1 into beta channel
+'on':
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-animex-rc1.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve tested Switch NRO and check its SHA256
+        env:
+          SOURCE_ARCHIVE_URL: 'https://sdmntprkoreacentral.oaiusercontent.com/files/00000000-53b8-8206-bc46-0ef78f2ccc8d/raw?se=2026-10-11T04%3A53%3A21Z&sp=r&sv=2026-02-06&sr=b&scid=04c1b3c9-b5b8-517b-8b6f-55a2ea859f8d&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-11T00%3A40%3A43Z&ske=2026-10-12T00%3A40%3A43Z&sks=b&skv=2026-02-06&sig=uwOZt%2BUM6kT7DLT55ySojihWok5aJOAkrr3poaOhnMs%3D'
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 --connect-timeout 15 --max-time 180 "$SOURCE_ARCHIVE_URL" -o /tmp/ANIMEX-RC1-ci.zip
+          unzip -j /tmp/ANIMEX-RC1-ci.zip 'ANIMEX-1.0.6-RC1.nro'
+          echo '6c124b9fe5d25ac62620ef5564a7d87dedef991ea30962addb15baae0b27a366  ANIMEX-1.0.6-RC1.nro' | sha256sum -c -
+          test -s 'ANIMEX-1.0.6-RC1.nro'
+      - name: Create GitHub prerelease from verified candidate
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if gh release view '1.0.6-RC1' --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload '1.0.6-RC1' 'ANIMEX-1.0.6-RC1.nro' --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create '1.0.6-RC1' 'ANIMEX-1.0.6-RC1.nro' --repo "$GITHUB_REPOSITORY" --title 'ANIMEX 1.0.6-RC1 (发布候选测试版)' --notes 'RC1 testing candidate: mainland direct China Mobile/Telecom anime keyframe-gated faster first picture; SK/LGU+ Korea explicit carrier HLS network tolerance; movie-only translucent gray circular spinner with rotating white highlight, no opening text/card after first frame. Other ports, China movie routes and prior SK movie repairs retained. Testing still required on Heilongjiang Mobile/Telecom, Jiangsu Telecom, SK and LGU+. Stable 1.0.5 not changed.' --prerelease --latest=false
+          fi
+          gh release view '1.0.6-RC1' --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | grep -Fxq 'ANIMEX-1.0.6-RC1.nro'
+      - name: Publish RC1 only to beta JSON, never stable version.json
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("beta.json")
+          old=json.loads(p.read_text(encoding="utf-8"))
+          assert isinstance(old,list) and old
+          data={
+            "version":"1.0.6-RC1",
+            "channel":"beta",
+            "download_url":"https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC1/ANIMEX-1.0.6-RC1.nro",
+            "download_url_cn":"",
+            "download_url_backup":"",
+            "notes":"1.0.6 RC1准正式测试版：国内移动/电信动漫首帧加载优化、韩国SK与LGU+ HLS兼容，电影端新增灰色半透明旋转白色圆环缓冲动画；保留其他播放逻辑。正式版仍是1.0.5。",
+            "sha256":"6c124b9fe5d25ac62620ef5564a7d87dedef991ea30962addb15baae0b27a366"
+          }
+          p.write_text(json.dumps([data]+[x for x in old if x.get("version")!="1.0.6-RC1"],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add beta.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish ANIMEX 1.0.6-RC1 in beta/test channel only'
+            git push origin HEAD:main
+          fi
