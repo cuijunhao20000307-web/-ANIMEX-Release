@@ -1,0 +1,61 @@
+name: Publish ANIMEX 1.0.6 Beta15 online update
+'on':
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-animex-beta15.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the tested Switch NRO and validate bytes
+        env:
+          SOURCE_ARCHIVE_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-a330-8209-bd44-6f1de6daa304/raw?se=2026-10-11T02%3A02%3A38Z&sp=r&sv=2026-02-06&sr=b&scid=2bbfaeb0-3efa-5773-b568-c7ea294b3460&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-10T23%3A18%3A20Z&ske=2026-10-11T23%3A18%3A20Z&sks=b&skv=2026-02-06&sig=ANHqABWi7SjRv1poC71Yf7y3bptu19r1XHYXO6nuy90%3D'
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 180 "$SOURCE_ARCHIVE_URL" -o /tmp/ANIMEX-beta15-ci.zip
+          unzip -j /tmp/ANIMEX-beta15-ci.zip 'ANIMEX-1.0.6-beta.15.nro'
+          echo '5527e5ef95673d85522a5c7eb7e843ed0f8c4dbb2807866b5bb08870a23094ec  ANIMEX-1.0.6-beta.15.nro' | sha256sum -c -
+          test -s 'ANIMEX-1.0.6-beta.15.nro'
+      - name: Upload verified NRO as public test release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if gh release view '1.0.6-beta.15' --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload '1.0.6-beta.15' 'ANIMEX-1.0.6-beta.15.nro' --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create '1.0.6-beta.15' 'ANIMEX-1.0.6-beta.15.nro' --repo "$GITHUB_REPOSITORY" --title 'ANIMEX 1.0.6-beta.15' --notes 'Fix Korean SK KANJU movie HLS stalled seeks: safe bounded read cancellation, fresh original-URL reopen, A/B rescue on exhausted retry; keep domestic and other providers intact. Test release pending real-console verification.' --prerelease --latest=false
+          fi
+          gh release view '1.0.6-beta.15' --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | grep -Fxq 'ANIMEX-1.0.6-beta.15.nro'
+      - name: Publish only the Beta manifest after release success
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path("beta.json")
+          rows=json.loads(path.read_text(encoding="utf-8"))
+          assert isinstance(rows,list)
+          new={
+            "version":"1.0.6-beta.15",
+            "channel":"beta",
+            "download_url":"https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.15/ANIMEX-1.0.6-beta.15.nro",
+            "download_url_cn":"",
+            "download_url_backup":"",
+            "notes":"修复韩国SK电影端快进后缓冲卡死：安全中断、原线路自动重开、失败可重试；国内网络配置不变（测试版）",
+            "sha256":"5527e5ef95673d85522a5c7eb7e843ed0f8c4dbb2807866b5bb08870a23094ec"
+          }
+          path.write_text(json.dumps([new]+[r for r in rows if r.get("version")!="1.0.6-beta.15"],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add beta.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update ANIMEX Beta manifest 1.0.6-beta.15'
+            git push origin HEAD:main
+          fi
