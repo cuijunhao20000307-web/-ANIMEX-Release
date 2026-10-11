@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-RC5",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC5/ANIMEX-1.0.6-RC5.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "RC5：中国模式＋移动网络直连时，动漫端首次打开视频返回 End of file 的同地址单次兼容重试与同集备用线路恢复；保留 RC4 电影端、韩国 SK、国内封面和 UI 原有逻辑。测试版需实机验证。",
+    "sha256": "0255c4118f71f80118fc165d9df81518be9bcf4fc5c6de560682d4092e714337"
+  },
+  {
     "version": "1.0.6-RC4",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC4/ANIMEX-1.0.6-RC4.nro",
