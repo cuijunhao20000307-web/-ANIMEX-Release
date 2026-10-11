@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-beta.14",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.14/ANIMEX-1.0.6-beta.14.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "动漫端快速启动缓冲优化；电影端 SK 连续快进优化；保留国内网络配置（测试版）",
+    "sha256": "507890ee65c4a7f6ddf16b9511dda62bc37f4de247dff35dee0f40f3ee9d8d94"
+  },
+  {
     "version": "1.0.6-beta.13",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.13/ANIMEX-1.0.6-beta.13.nro",
