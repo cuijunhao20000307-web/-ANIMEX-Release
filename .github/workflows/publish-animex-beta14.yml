@@ -6,6 +6,12 @@ name: Publish ANIMEX 1.0.6 Beta14 online update
     paths:
       - .github/workflows/publish-animex-beta14.yml
       - beta14-publish.trigger
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
 permissions:
   contents: write
 concurrency:
@@ -13,13 +19,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.event.head_commit.message == 'release: stage ANIMEX 1.0.6 Beta14 online update'
+    if: github.event.head_commit.message == 'release: stage ANIMEX 1.0.6 Beta14 online update' || (github.event_name == 'pull_request' && github.head_ref == 'release/beta14-online-trigger')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Download and verify the tested NRO
         env:
-          ARTIFACT_ZIP_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-eca4-8209-859c-83ca36bb24cc/raw?se=2026-10-11T01%3A28%3A26Z&sp=r&sv=2026-02-06&sr=b&scid=0eea01af-bff2-51bd-a197-732380bba961&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-11T01%3A03%3A13Z&ske=2026-10-12T01%3A03%3A13Z&sks=b&skv=2026-02-06&sig=D4Iuxr%2B5ySxuZ9%2BpfXI/EKs1NRCXuWD3NbPdrZjx1DI%3D'
+          ARTIFACT_ZIP_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-d0d8-8209-badc-595aed056498/raw?se=2026-10-11T01%3A31%3A01Z&sp=r&sv=2026-02-06&sr=b&scid=bf991d1d-8ae3-54f4-a149-2ff81e9a72f5&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-10T23%3A18%3A20Z&ske=2026-10-11T23%3A18%3A20Z&sks=b&skv=2026-02-06&sig=b4di%2Bn3MY5fWWI53zYt0t3yEfzQo0PgEYIAXr6JHHJE%3D'
         run: |
           set -euo pipefail
           curl --fail --location --retry 3 --connect-timeout 20 --max-time 180 "$ARTIFACT_ZIP_URL" -o /tmp/animex-beta14-artifact.zip
@@ -40,6 +46,8 @@ jobs:
       - name: Publish Beta-only update manifest after asset exists
         run: |
           set -euo pipefail
+          git fetch origin main
+          git checkout -B main origin/main
           python3 - <<'PY'
           import json
           from pathlib import Path
