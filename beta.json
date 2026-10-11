@@ -1,11 +1,11 @@
 [
   {
-    "version": "1.0.6-RC2",
+    "version": "1.0.6-RC3",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC2/ANIMEX-1.0.6-RC2.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC3/ANIMEX-1.0.6-RC3.nro",
     "download_url_cn": "",
     "download_url_backup": "",
-    "notes": "RC2：四端视频内半透明灰白色大缓冲圈，复用冻结画面降低卡顿；RC优先于Beta更新排序；保持国内SK/LGU+及国内移动电信优化。",
-    "sha256": "29a92370c67e36fbb5b5a31078a6b7b9c6eba67266a73aa287da6ac44ed01b66"
+    "notes": "RC3：四端视频内快进/缓冲即刻计时，等待不足2秒不显示圆形缓冲动画；超过2秒采用原半透明灰白色大圆圈；清理冻结画面缓存；保留所有地区网络优化。",
+    "sha256": "87d972d945ff1c8b053b9f3061609d1a55e8292d6a3a44078ce4981a914a83f7"
   }
 ]
