@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6",
+    "channel": "stable",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6/ANIMEX-1.0.6.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "sha256": "f673ffda65277715590f3e052ff6e5a02b061796bfd8a2368ab05b96c2032018",
+    "notes": "ANIMEX 1.0.6 正式版：保留 RC7 透明视频内缓冲圈与首开粉色圈、RC6 韩国 SK 电影端缓冲恢复、RC5 国内动漫 EOF 修复；播放器及原有网络优化不变。"
+  },
+  {
     "version": "1.0.5",
     "channel": "stable",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.5/ANIMEX-1.0.5.nro",
