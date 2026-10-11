@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-beta.17",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.17/ANIMEX-1.0.6-beta.17.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "SK电影端大幅快进目标帧卡死判断修复、断点续播直接定位并保留旧方案；国内网络配置不变（测试版）",
+    "sha256": "c7935a54ec04883402ddb1fa6a0fbc254f14097498d01552634b86f6acf37ae9"
+  },
+  {
     "version": "1.0.6-beta.16",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.16/ANIMEX-1.0.6-beta.16.nro",
