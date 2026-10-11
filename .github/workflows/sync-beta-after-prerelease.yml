@@ -1,0 +1,99 @@
+name: Auto-sync ANIMEX Beta channel on prerelease
+'on':
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing verified Beta or RC prerelease tag
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: animex-beta-manifest
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.release.prerelease == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ github.event.release.tag_name || inputs.release_tag }}
+    steps:
+      - name: Validate official Beta or RC release asset and digest
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+-(RC[0-9]+|beta\.[0-9]+)$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" > release.json
+          jq -e '.prerelease == true and .draft == false' release.json
+          asset="ANIMEX-$RELEASE_TAG.nro"
+          jq -e --arg name "$asset" \
+            'any(.assets[]; .name == $name and .size > 1000000 and
+             (.digest | startswith("sha256:")))' release.json
+          digest="$(jq -r --arg name "$asset" \
+            '.assets[] | select(.name == $name) | .digest' release.json)"
+          hash="${digest#sha256:}"
+          [[ "$hash" =~ ^[0-9a-f]{64}$ ]]
+          url="$(jq -r --arg name "$asset" \
+            '.assets[] | select(.name == $name) | .browser_download_url' release.json)"
+          [[ "$url" == "https://github.com/$GITHUB_REPOSITORY/releases/download/$RELEASE_TAG/$asset" ]]
+          printf '%s\n' "$hash" > hash.txt
+          printf '%s\n' "$url" > url.txt
+
+      - name: Update only beta.json and preserve old RC and Stable
+        run: |
+          set -euo pipefail
+          stable_before="$(gh api "repos/$GITHUB_REPOSITORY/contents/version.json" --jq .sha)"
+          gh api "repos/$GITHUB_REPOSITORY/contents/beta.json" > beta-api.json
+          content_sha="$(jq -r '.sha' beta-api.json)"
+          jq -r '.content' beta-api.json | base64 -d > beta-before.json
+          python3 - "$RELEASE_TAG" "$(cat hash.txt)" "$(cat url.txt)" <<'PY'
+          import json, re, sys
+          from pathlib import Path
+          version, digest, url = sys.argv[1:]
+          old = json.loads(Path("beta-before.json").read_text())
+          assert isinstance(old, list)
+          assert re.fullmatch(r"[0-9a-f]{64}", digest)
+          entry = {
+              "version": version, "channel": "beta",
+              "download_url": url, "download_url_cn": "",
+              "download_url_backup": "",
+              "notes": f"{version} 官方 Beta/RC 测试版，建议先进行实机验证。",
+              "sha256": digest
+          }
+          data = [entry] + [e for e in old if e.get("version") != version]
+          def key(e):
+              m = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)-(?:RC(\d+)|beta\.(\d+))",
+                               str(e.get("version", "")), re.I)
+              if not m:
+                  return (-1, -1, -1, -1, -1)
+              major, minor, patch, rc, beta = m.groups()
+              return (int(major), int(minor), int(patch),
+                      2 if rc is not None else 1, int(rc or beta))
+          data.sort(key=key, reverse=True)
+          Path("beta-after.json").write_text(
+              json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+          assert any(e["version"] == version and e["sha256"] == digest
+                     for e in data)
+          assert all(e["channel"] == "beta" for e in data)
+          PY
+          if cmp -s beta-before.json beta-after.json; then
+            echo "Beta manifest is already current."
+          else
+            payload="$(base64 -w0 < beta-after.json)"
+            gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/beta.json" \
+              -f "message=release(beta): auto-update catalog for $RELEASE_TAG" \
+              -f "content=$payload" -f "sha=$content_sha" -f "branch=main" \
+              --jq .commit.sha
+          fi
+          gh api "repos/$GITHUB_REPOSITORY/contents/beta.json" --jq .content |
+            base64 -d > beta-confirm.json
+          jq -e --arg ver "$RELEASE_TAG" --arg hash "$(cat hash.txt)" \
+            'any(.[]; .version == $ver and .sha256 == $hash)' beta-confirm.json
+          test "$stable_before" = \
+            "$(gh api "repos/$GITHUB_REPOSITORY/contents/version.json" --jq .sha)"
