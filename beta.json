@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-beta.15",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.15/ANIMEX-1.0.6-beta.15.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "修复韩国SK电影端快进后缓冲卡死：安全中断、原线路自动重开、失败可重试；国内网络配置不变（测试版）",
+    "sha256": "5527e5ef95673d85522a5c7eb7e843ed0f8c4dbb2807866b5bb08870a23094ec"
+  },
+  {
     "version": "1.0.6-beta.14",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.14/ANIMEX-1.0.6-beta.14.nro",
