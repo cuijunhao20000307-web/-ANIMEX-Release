@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.6-beta.18",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.18/ANIMEX-1.0.6-beta.18.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "电影端搜索别名匹配修复（怪癖女/乖僻女）及SK大幅快进异常分片备用定位；国内网络配置不变（Beta18测试）",
+    "sha256": "895037b31ad47355cdbdcc7a940727353fd4f47806eb7b2a373b769de41b1a24"
+  },
+  {
     "version": "1.0.6-beta.17",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-beta.17/ANIMEX-1.0.6-beta.17.nro",
