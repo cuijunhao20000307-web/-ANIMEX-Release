@@ -19,13 +19,15 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.event.head_commit.message == 'release: stage ANIMEX 1.0.6 Beta14 online update' || (github.event_name == 'pull_request' && github.head_ref == 'release/beta14-online-trigger')
+    if: >-
+      (github.event_name == 'push' && github.event.head_commit.message == 'release: stage ANIMEX 1.0.6 Beta14 online update') ||
+      (github.event_name == 'pull_request' && github.head_ref == 'release/beta14-online-trigger')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Download and verify the tested NRO
         env:
-          ARTIFACT_ZIP_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-d0d8-8209-badc-595aed056498/raw?se=2026-10-11T01%3A31%3A01Z&sp=r&sv=2026-02-06&sr=b&scid=bf991d1d-8ae3-54f4-a149-2ff81e9a72f5&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-10T23%3A18%3A20Z&ske=2026-10-11T23%3A18%3A20Z&sks=b&skv=2026-02-06&sig=b4di%2Bn3MY5fWWI53zYt0t3yEfzQo0PgEYIAXr6JHHJE%3D'
+          ARTIFACT_ZIP_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-6c2c-8209-9e8a-3a73e3f2b58f/raw?se=2026-10-11T01%3A32%3A25Z&sp=r&sv=2026-02-06&sr=b&scid=6f53e790-acb1-575a-aa0b-9d6a946d9cef&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-11T00%3A04%3A01Z&ske=2026-10-12T00%3A04%3A01Z&sks=b&skv=2026-02-06&sig=hehpjAv2YbniVHQqtgb6yhJh%2B7C3jlvTpp0mopsGLyE%3D'
         run: |
           set -euo pipefail
           curl --fail --location --retry 3 --connect-timeout 20 --max-time 180 "$ARTIFACT_ZIP_URL" -o /tmp/animex-beta14-artifact.zip
