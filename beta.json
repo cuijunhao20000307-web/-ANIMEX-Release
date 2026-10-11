@@ -1,11 +1,11 @@
 [
   {
-    "version": "1.0.6-RC1",
+    "version": "1.0.6-RC2",
     "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC1/ANIMEX-1.0.6-RC1.nro",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC2/ANIMEX-1.0.6-RC2.nro",
     "download_url_cn": "",
     "download_url_backup": "",
-    "notes": "1.0.6 RC1准正式测试版：国内移动/电信动漫首帧加载优化、韩国SK与LGU+ HLS兼容，电影端新增灰色半透明旋转白色圆环缓冲动画；保留其他播放逻辑。正式版仍是1.0.5。",
-    "sha256": "6c124b9fe5d25ac62620ef5564a7d87dedef991ea30962addb15baae0b27a366"
+    "notes": "RC2：四端视频内半透明灰白色大缓冲圈，复用冻结画面降低卡顿；RC优先于Beta更新排序；保持国内SK/LGU+及国内移动电信优化。",
+    "sha256": "29a92370c67e36fbb5b5a31078a6b7b9c6eba67266a73aa287da6ac44ed01b66"
   }
 ]
