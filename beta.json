@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.19",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.19/ANIMEX-1.0.7-beta19.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta19：深色主题完整保持 beta18；白色主题三个框使用参考图中灰色圆角磨砂与白色文字；保留既有电影端搜索及网络修复；实机待验证",
+    "sha256": "b2374981fe07e9190dfd8c0ba037bdd1c3637bafe0068e8ef22283ac90ac3664"
+  },
+  {
     "version": "1.0.7-beta.18",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.18/ANIMEX-1.0.7-beta18.nro",
