@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.7",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.7/ANIMEX-1.0.8-beta.7.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta7：修复 Otage 集数和简介、精准搜索、快速分类切换与封面画质",
+    "sha256": "0c19e5d341b35f5c3fcfc692edfef51271089c81b95c95f6f3972190acc9ca5d"
+  },
+  {
     "version": "1.0.8-beta.6",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.6/ANIMEX-1.0.8-beta.6.nro",
