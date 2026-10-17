@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.2",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.2/ANIMEX-1.0.8-beta.2.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta2：Omofuna 目录与选集；Lanerc 测试源",
+    "sha256": "a9064089b8150bcc166e0bd4b9b026374697bf576e390ccddb1d4c833289ae6b"
+  },
+  {
     "version": "1.0.8-beta.1",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.1/ANIMEX-1.0.8-beta.1.nro",
