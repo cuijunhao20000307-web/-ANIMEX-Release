@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.22",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.22/ANIMEX-1.0.7-beta22.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta22：新增独立在线动漫2(agekk)六大分类及详情选集网页解析；成人端、播放器和 UI 保持 beta21；在线搜索和播放仍待 Switch 实机验证",
+    "sha256": "21ffa7b2cb98711a0f5866b3a4219f95863870c0b9ab9cc58f6f214c4091fc76"
+  },
+  {
     "version": "1.0.7-beta.21",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.21/ANIMEX-1.0.7-beta21.nro",
