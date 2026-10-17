@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.17",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.17/ANIMEX-1.0.7-beta17.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta17：修复深浅主题下选集、简介、封面外框的灰色磨砂填充与文字对比；电影端增加绝命毒师/蜡笔小新前三季精准分季搜索，按上游真实条目匹配，保留既有网络报错修正；实机待验证",
+    "sha256": "64eccbe89b08beeedc6600702326c8d8f6c6a3add1c9d3a1639fd7f6d8373a56"
+  },
+  {
     "version": "1.0.7-beta.16",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.16/ANIMEX-1.0.7-beta16.nro",
