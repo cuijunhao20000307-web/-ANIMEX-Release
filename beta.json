@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.4",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.4/ANIMEX-1.0.8-beta.4.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta4：移除 Ofan；Lanerc 线路标签、公开媒体预检与错误提示",
+    "sha256": "2d876c41293584f7ebd96655ac476e315a1d36f66cc5dd0566bceffe6d9f69c0"
+  },
+  {
     "version": "1.0.8-beta.3",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.3/ANIMEX-1.0.8-beta.3.nro",
