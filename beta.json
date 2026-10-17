@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.15",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.15/ANIMEX-1.0.7-beta15.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta15：移除播放器画质切换，白色主题选集及简介框改为半透明模糊磨砂，保留视频自动选流、播放与快进、固定 A/B/X/L 按钮；实机待验证",
+    "sha256": "9111b4c1dff44f9744bf82c437338ba45dce4bf1e7be2ddc4d233c35d4db18c5"
+  },
+  {
     "version": "1.0.7-beta.14",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.14/ANIMEX-1.0.7-beta14.nro",
