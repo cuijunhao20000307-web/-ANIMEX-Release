@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.10",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.10/ANIMEX-1.0.7-beta10.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta10：八种完整界面主题，触摸服务圆点或 R3 切换并保存；首页、搜索、选集、筛选、公告和前端统一换色。封面与播放器不变，实机待验证",
+    "sha256": "a6d0f93820d81503f7d85d359b1e5b48dc7fb502495c856c23c0cef58b89098d"
+  },
+  {
     "version": "1.0.7-beta.9",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.9/ANIMEX-1.0.7-beta9.nro",
