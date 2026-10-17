@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.13",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.13/ANIMEX-1.0.7-beta13.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta13：优化圆形按钮/环形图标绘制性能，并与 beta12 逐像素回归比对；保留固定手柄按钮颜色与白底选集文字，封面和播放器不变；实机待验证",
+    "sha256": "8b00185b540d6c400166c032d52646265523365e9b3d800a86b1fb9ac11d0751"
+  },
+  {
     "version": "1.0.7-beta.12",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.12/ANIMEX-1.0.7-beta12.nro",
