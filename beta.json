@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7",
+    "channel": "stable",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7/ANIMEX-1.0.7.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 正式版 · 已从 beta23 转正。此条目用于 beta 用户直接升级 Stable；安装完成后自动切换到正式版。",
+    "sha256": "5f1021fce75c6380ac061dbf6620de39edb964ee092c5b755d4bd7cb6b314771"
+  },
+  {
     "version": "1.0.7-beta.23",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.23/ANIMEX-1.0.7-beta23.nro",
