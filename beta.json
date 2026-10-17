@@ -7,41 +7,5 @@
     "download_url_backup": "",
     "notes": "1.0.7 beta1：作品选集动态封面背景与在线动漫2；需 Switch 实机验证",
     "sha256": "54296bf655eb15cf39d6e70fe779eea7d9e24da2485da30ab3350c80551ec1c8"
-  },
-  {
-    "version": "1.0.6-RC7",
-    "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC7/ANIMEX-1.0.6-RC7.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "1.0.6-RC7 官方 Beta/RC 测试版，建议先进行实机验证。",
-    "sha256": "f1815188c21f4b7a4f2a701e764fc7c915a3bc1fb5e9d530a3e70073c31ff209"
-  },
-  {
-    "version": "1.0.6-RC6",
-    "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC6/ANIMEX-1.0.6-RC6.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "RC6（测试版）：韩国 SK／KANJU 电影端播放中途停帧与 HLS 缓冲恢复优化；仍需实机验证。保留 RC5 中国移动动漫修复；RC4 与 Stable 不变。",
-    "sha256": "6f8de5c9da9328417e93225533e285127a670af7cfb4241c4ea05010e5925eac"
-  },
-  {
-    "version": "1.0.6-RC5",
-    "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC5/ANIMEX-1.0.6-RC5.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "RC5：中国模式＋移动网络直连时，动漫端首次打开视频返回 End of file 的同地址单次兼容重试与同集备用线路恢复；保留 RC4 电影端、韩国 SK、国内封面和 UI 原有逻辑。测试版需实机验证。",
-    "sha256": "0255c4118f71f80118fc165d9df81518be9bcf4fc5c6de560682d4092e714337"
-  },
-  {
-    "version": "1.0.6-RC4",
-    "channel": "beta",
-    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.6-RC4/ANIMEX-1.0.6-RC4.nro",
-    "download_url_cn": "",
-    "download_url_backup": "",
-    "notes": "RC4：电影端音画同步卡顿保护、暂停和快进状态误判修复；黑龙江移动/电信/联通动漫首帧读取优化；保留RC3四端2秒缓冲圈及韩国网络优化。",
-    "sha256": "7e9021262f91ade4bf971853983e3167bbebdcecf95b5953b2079ae958643dec"
   }
 ]
