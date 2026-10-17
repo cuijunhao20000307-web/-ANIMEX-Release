@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.5",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.5/ANIMEX-1.0.7-beta5.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta5：修复选集背景放大马赛克，双线性平滑与柔化、增强文字对比；Switch 实机待验证",
+    "sha256": "17dd6e45d31610bf8c3ba9bb1dae6293ebd1b2111e2db7611b89df5e429f1cd5"
+  },
+  {
     "version": "1.0.7-beta.4",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.4/ANIMEX-1.0.7-beta4.nro",
