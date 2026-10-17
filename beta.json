@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.20",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.20/ANIMEX-1.0.7-beta20.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta20：白色模式三个框统一RGB 186/188/190、96%填充、轻微磨砂、白色文字；深色模式保持原版不动；电影端既有功能不变；实机待验证",
+    "sha256": "96ea92ed2eca2fd22ab8ea0e0b7fbc6f2a373c69defae59e29dbe12827f3cf51"
+  },
+  {
     "version": "1.0.7-beta.19",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.19/ANIMEX-1.0.7-beta19.nro",
