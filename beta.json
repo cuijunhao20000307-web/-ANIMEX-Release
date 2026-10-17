@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.9",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.9/ANIMEX-1.0.7-beta9.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta9：前端/设置/首页/搜索/筛选/选集/公告共用颜色圆点，点击即换色且保留记忆；播放器延续 beta8，实机待验证",
+    "sha256": "3a1937fd39d0656c5c04ee7aa7d5b2b1872b7af2a7c8bcdc974169f34cdd5b89"
+  },
+  {
     "version": "1.0.7-beta.8",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.8/ANIMEX-1.0.7-beta8.nro",
