@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.2",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.2/ANIMEX-1.0.7-beta2.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta2：作品选集动态封面背景与在线动漫2；需 Switch 实机验证",
+    "sha256": "ca9fc5f662e1d628293e8ac708844f090b81c8f132ffec07db91642b4b9be4c5"
+  },
+  {
     "version": "1.0.7-beta.1",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.1/ANIMEX-1.0.7-beta1.nro",
