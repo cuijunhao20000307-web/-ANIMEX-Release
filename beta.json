@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.14",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.14/ANIMEX-1.0.7-beta14.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta14：白色模式下封面外框、简介框、集数框调整为淡灰色并提高文字对比；保留原封面、圆形抗锯齿、固定 A/B/X/L 按钮及播放器逻辑，实机待验证",
+    "sha256": "e19b12a3532796ac5afba07a58a274936b542142159b7f1db082f79d6591ce89"
+  },
+  {
     "version": "1.0.7-beta.13",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.13/ANIMEX-1.0.7-beta13.nro",
