@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.8",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.8/ANIMEX-1.0.8-beta.8.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta8：修复 Switch 原生 1280x670 背景一次渲染、改善低清拉伸，不影响其他端口",
+    "sha256": "42e1ec1fb1a3cb32673c447ff6d4d0e9bdd2f4f65a1f1a8c543627aab40f7ab8"
+  },
+  {
     "version": "1.0.8-beta.7",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.7/ANIMEX-1.0.8-beta.7.nro",
