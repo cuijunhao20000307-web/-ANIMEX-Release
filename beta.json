@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.18",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.18/ANIMEX-1.0.7-beta18.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta18：深色主题简介、集数、封面框恢复原版深蓝样式；白色模式仅保留淡灰微透明磨砂；保留绝命毒师前四季和蜡笔小新前三季精准搜索及电影端网络报错修复；实机待验证",
+    "sha256": "eca9595cdf3e06071d7a9b43dd3a0250119a4b1a481ac9f056e8247239f94d93"
+  },
+  {
     "version": "1.0.7-beta.17",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.17/ANIMEX-1.0.7-beta17.nro",
