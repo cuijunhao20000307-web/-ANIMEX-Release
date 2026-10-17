@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.6",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.6/ANIMEX-1.0.8-beta.6.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta6：Otage 官网分类、线路选择与后台高清背景；播放逻辑保留",
+    "sha256": "9362a11bf3b41c76024231cd231b266bc0c155651fed80a355ab42c358e1b31f"
+  },
+  {
     "version": "1.0.8-beta.5",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.5/ANIMEX-1.0.8-beta.5.nro",
