@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.10",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.10/ANIMEX-1.0.8-beta.10.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.10/ANIMEX-1.0.8-beta.10.nro",
+    "notes": "1.0.8 beta10：国际在线更新启用 SHA256 校验的备用线路、失败诊断；视频源与 UI 不变",
+    "sha256": "657832a5f20e3bf0d6a041953bf069ebc0b451c44f106026b06d3359be802c29"
+  },
+  {
     "version": "1.0.8-beta.9",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.9/ANIMEX-1.0.8-beta.9.nro",
