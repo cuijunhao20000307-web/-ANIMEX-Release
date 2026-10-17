@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.12",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.12/ANIMEX-1.0.7-beta12.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta12：圆形按钮抗锯齿、固定 A/B/X/L 颜色、白底选集页简介及集数深色文字；保留 beta11 单双击主题记忆，封面/播放器不变；实机待验证",
+    "sha256": "1fee3ca8b49a79c2bed90211422a01509808c2ca4d48ffce7f3a3788d198a177"
+  },
+  {
     "version": "1.0.7-beta.11",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.11/ANIMEX-1.0.7-beta11.nro",
