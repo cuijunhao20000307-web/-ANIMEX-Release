@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.5",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.5/ANIMEX-1.0.8-beta.5.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta5：删除 Lanerc，新增 Otage 动漫分类、选集及公开播放页解析；真机播放待验证",
+    "sha256": "9189e7afc36c7d772731d3de0131f6a367633908f16fc82cff0250ac39dcac13"
+  },
+  {
     "version": "1.0.8-beta.4",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.4/ANIMEX-1.0.8-beta.4.nro",
