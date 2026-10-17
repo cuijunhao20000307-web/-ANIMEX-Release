@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.4",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.4/ANIMEX-1.0.7-beta4.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta4：修复 beta3 在 Switch 上选集页背景仍为黑色的问题；Switch 实机待验证",
+    "sha256": "a4316b2e31bb2e836b4adc5756d1834607eba080cba0c29ced25eda07ff3e4ce"
+  },
+  {
     "version": "1.0.7-beta.3",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.3/ANIMEX-1.0.7-beta3.nro",
