@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.8",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.8/ANIMEX-1.0.7-beta8.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta8：移除刷新提示 UI 与在线动漫2，优化后台任务取消稳定性；电影端新增六季源站搜索快捷入口，封面与播放器逻辑不变；实机待验证",
+    "sha256": "055d26737d1d0af9647d4cbd6c29d69afe94293cb70819978c3bc09b54e2921f"
+  },
+  {
     "version": "1.0.7-beta.7",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.7/ANIMEX-1.0.7-beta7.nro",
