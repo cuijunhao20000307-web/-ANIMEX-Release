@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.9",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.9/ANIMEX-1.0.8-beta.9.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta9：Otage 严格匹配高清横版背景，原站低清封面不再暴力放大；不修改播放器",
+    "sha256": "698d9ec1864fc8581c8378ee7ab05496ffbad9d788ebcbeb0c1147a2e5e51447"
+  },
+  {
     "version": "1.0.8-beta.8",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.8/ANIMEX-1.0.8-beta.8.nro",
