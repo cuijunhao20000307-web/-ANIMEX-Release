@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.3",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.3/ANIMEX-1.0.8-beta.3.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.8 beta3：Lanerc POST 与选集修复；Omofuna 目录和选集解析修复",
+    "sha256": "47cbf521f63acb31078de0d9f8a0d54b476216bca99a4b52a167d553379f2c27"
+  },
+  {
     "version": "1.0.8-beta.2",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.2/ANIMEX-1.0.8-beta.2.nro",
