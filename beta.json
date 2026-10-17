@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.11",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.11/ANIMEX-1.0.7-beta11.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta11：删除额外配色UI；右上『服务正常』单击换强调色、快速双击深蓝/白底切换，分别保存。保留封面与播放器逻辑；Switch实机待验证",
+    "sha256": "377f5f5af8724c60dfe3e2b3bb51878f779b14de97740d937ac9e2b5cc027a2b"
+  },
+  {
     "version": "1.0.7-beta.10",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.10/ANIMEX-1.0.7-beta10.nro",
