@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.6",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.6/ANIMEX-1.0.7-beta6.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta6：在线动漫2适配 cn.agekkkk.com，优化首页推荐稳定性及首次显示速度，新增紫色 Y 换一批 UI；Switch 实机待验证",
+    "sha256": "322d0922a055264703d8cedd3bd8905f716fd29d7b7321695160bfa6b8ee5e6f"
+  },
+  {
     "version": "1.0.7-beta.5",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.5/ANIMEX-1.0.7-beta5.nro",
