@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.3",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.3/ANIMEX-1.0.7-beta3.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta3：选集页封面动态背景、简介与六列选集按效果图布局；Switch 实机待验证",
+    "sha256": "297adaf7f505ad4619fe556e72ff8f1728afd1a9c5611b0db3584756b46f5f6c"
+  },
+  {
     "version": "1.0.7-beta.2",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.2/ANIMEX-1.0.7-beta2.nro",
