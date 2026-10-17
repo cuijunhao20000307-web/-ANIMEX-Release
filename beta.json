@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.21",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.21/ANIMEX-1.0.7-beta21.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta21：白色主题简介、集数和封面框直接使用灰色填充（RGB 102/106/112），不透明度70%，白字边框不变；深色主题及其他功能原样保留；实机待确认",
+    "sha256": "40d918bd0aeb503a5d9c179d9d6cec7215f7251c955d85ebb9079fbe1a884459"
+  },
+  {
     "version": "1.0.7-beta.20",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.20/ANIMEX-1.0.7-beta20.nro",
