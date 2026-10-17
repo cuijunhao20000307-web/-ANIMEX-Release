@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.23",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.23/ANIMEX-1.0.7-beta23.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta23：移除在线动漫2(agekk)，旧配置隐藏且不删除SD文件；原在线动漫及成人端不变；保留beta21的白色主题70%灰框。",
+    "sha256": "8b3da032663f68372ff4d1b72ed43a120234aff0329b40fa96a7e3113ad09ad3"
+  },
+  {
     "version": "1.0.7-beta.22",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.22/ANIMEX-1.0.7-beta22.nro",
