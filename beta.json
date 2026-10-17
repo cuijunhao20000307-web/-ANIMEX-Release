@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.7-beta.16",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.16/ANIMEX-1.0.7-beta16.nro",
+    "download_url_cn": "",
+    "download_url_backup": "",
+    "notes": "1.0.7 beta16：白色主题简介、选集、封面外框改为淡灰微透明磨砂；电影端修复HTTP No error误报并保留二次解析失败原因；不改其他端播放器，三部缺封面影片的上游可用性仍需实机验证",
+    "sha256": "0522e0948b439647b91fa649b84ec14b10b44ac2421681de86ee9223e3c90e92"
+  },
+  {
     "version": "1.0.7-beta.15",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.7-beta.15/ANIMEX-1.0.7-beta15.nro",
