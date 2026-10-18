@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.21",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.21/ANIMEX-1.0.8-beta.21.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.21/ANIMEX-1.0.8-beta.21.nro",
+    "notes": "1.0.8 beta21：按阶段定位动漫高清壁纸接口故障，Bangumi 无精确匹配时安全尝试 AniList 直接检索",
+    "sha256": "29d3070b41f65a137288303efd46dd2c0d2977a7a88873b89c03e8942a38aae7"
+  },
+  {
     "version": "1.0.8-beta.20",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.20/ANIMEX-1.0.8-beta.20.nro",
