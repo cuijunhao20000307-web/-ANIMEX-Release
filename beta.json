@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.23",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.23/ANIMEX-1.0.8-beta.23.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.23/ANIMEX-1.0.8-beta.23.nro",
+    "notes": "1.0.8 beta23：同封面离线 2x/4x 轮廓清晰化、原尺寸高清封面优先、Switch SD 背景缓存；保留不串番限制",
+    "sha256": "279b46703d2b0d200c3d68df723ada4bb398c03eec238e7d9a9aa24060e7c0e9"
+  },
+  {
     "version": "1.0.8-beta.22",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.22/ANIMEX-1.0.8-beta.22.nro",
