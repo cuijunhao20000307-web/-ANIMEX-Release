@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.13",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.13/ANIMEX-1.0.8-beta.13.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.13/ANIMEX-1.0.8-beta.13.nro",
+    "notes": "1.0.8 beta13：Otage 高清壁纸源、原生画面锐化与安全回退；其余功能保持 beta12",
+    "sha256": "3ac6d1839557d58b7110a8ddb42b934be35c2b764df77d562ab8a962ed78a0cd"
+  },
+  {
     "version": "1.0.8-beta.12",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.12/ANIMEX-1.0.8-beta.12.nro",
