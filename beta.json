@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.16",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.16/ANIMEX-1.0.8-beta.16.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.16/ANIMEX-1.0.8-beta.16.nro",
+    "notes": "1.0.8 beta16：修复四端选集页灰底，恢复动态壁纸铺满；自动下载高清横图并优先展示",
+    "sha256": "8b54861a1b55eb6113e7da0507df2317a9a6027eb7a52ad867b52df4e3448fc4"
+  },
+  {
     "version": "1.0.8-beta.15",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.15/ANIMEX-1.0.8-beta.15.nro",
