@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.14",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.14/ANIMEX-1.0.8-beta.14.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.14/ANIMEX-1.0.8-beta.14.nro",
+    "notes": "1.0.8 beta14：新增同作品高清横版原图来源、实际尺寸日志；保留 beta13 其他功能",
+    "sha256": "e31b013119a16c926a3630ebb02470472bb51e516ac6b8be5010bc5f784bb235"
+  },
+  {
     "version": "1.0.8-beta.13",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.13/ANIMEX-1.0.8-beta.13.nro",
