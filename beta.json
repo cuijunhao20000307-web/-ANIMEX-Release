@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.22",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.22/ANIMEX-1.0.8-beta.22.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.22/ANIMEX-1.0.8-beta.22.nro",
+    "notes": "1.0.8 beta22：四端背景严格跟随当前封面；仅接受画面一致的高清原版封面，禁止串番及剧照替换",
+    "sha256": "a8dd9218326d47ac72abb9d769d7902d3b7725ee952bf747c61c2063af973de6"
+  },
+  {
     "version": "1.0.8-beta.21",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.21/ANIMEX-1.0.8-beta.21.nro",
