@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.19",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.19/ANIMEX-1.0.8-beta.19.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.19/ANIMEX-1.0.8-beta.19.nro",
+    "notes": "1.0.8 beta19：修复高清壁纸后台线程无法启动及数千次重复重试，保留四端动态铺满背景",
+    "sha256": "cf6855ca49243e19ebd0f71359a0de117bbc0887ebd8f94a3e900b018439708c"
+  },
+  {
     "version": "1.0.8-beta.18",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.18/ANIMEX-1.0.8-beta.18.nro",
