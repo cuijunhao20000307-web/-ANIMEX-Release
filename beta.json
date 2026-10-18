@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.24",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.24/ANIMEX-1.0.8-beta.24.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.24/ANIMEX-1.0.8-beta.24.nro",
+    "notes": "1.0.8 beta24：封面处理全面回归 1.0.7 原始效果，去除异步超分突然提亮，保留 1.0.8 其他播放与在线功能",
+    "sha256": "fc06d7237df796486f22c354aca09fd48d5ae47ee80bc903fbaab59ab598ccca"
+  },
+  {
     "version": "1.0.8-beta.23",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.23/ANIMEX-1.0.8-beta.23.nro",
