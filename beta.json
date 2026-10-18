@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.15",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.15/ANIMEX-1.0.8-beta.15.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.15/ANIMEX-1.0.8-beta.15.nro",
+    "notes": "1.0.8 beta15：四端共用高分辨率背景下载和缓存，低清素材不强制放大；播放器保持原样",
+    "sha256": "b16f54eddc45f2e314732bbae3e1c25434af283be8be87a27560113183968cc0"
+  },
+  {
     "version": "1.0.8-beta.14",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.14/ANIMEX-1.0.8-beta.14.nro",
