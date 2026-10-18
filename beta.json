@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.20",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.20/ANIMEX-1.0.8-beta.20.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.20/ANIMEX-1.0.8-beta.20.nro",
+    "notes": "1.0.8 beta20：保留验证的英文/罗马字片名，提高高清壁纸匹配率并增加分辨率和下载故障诊断",
+    "sha256": "07b2ca5b173e372c123a726f760382d2e766ce6ff18e2c28460f206704c2c85d"
+  },
+  {
     "version": "1.0.8-beta.19",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.19/ANIMEX-1.0.8-beta.19.nro",
