@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.12",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.12/ANIMEX-1.0.8-beta.12.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.12/ANIMEX-1.0.8-beta.12.nro",
+    "notes": "1.0.8 beta12：Otage 选集全屏背景、公开搜索、分类切换与在线更新修复整合测试版",
+    "sha256": "ca99b61fabcd7ed9b9b22e7844baed4d96f7378aef4c8c1be8d32e3b4f4981c6"
+  },
+  {
     "version": "1.0.8-beta.11",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.11/ANIMEX-1.0.8-beta.11.nro",
