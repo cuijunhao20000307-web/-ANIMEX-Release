@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.18",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.18/ANIMEX-1.0.8-beta.18.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.18/ANIMEX-1.0.8-beta.18.nro",
+    "notes": "1.0.8 beta18：高清壁纸与选集详情异步并行，壁纸诊断文件保留所有阶段及来源信息",
+    "sha256": "411e3a0df577c08a4a0667a8d14c3a2b75b01e0bae78f921eb3ac2d3f6f9a684"
+  },
+  {
     "version": "1.0.8-beta.17",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.17/ANIMEX-1.0.8-beta.17.nro",
