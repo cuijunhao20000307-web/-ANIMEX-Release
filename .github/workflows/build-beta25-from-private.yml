@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Check private-source access configuration
         env:
-          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
         run: |
           if [ -z "$SOURCE_READ_TOKEN" ]; then
             echo "Private checkout token is unavailable. Configure SOURCE_READ_TOKEN with read-only access to the ANIMEX source repository."
@@ -31,7 +31,7 @@ jobs:
         with:
           repository: cuijunhao20000307-web/ANIMEX
           ref: beta/1.0.8-beta.25
-          token: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          token: ${{ secrets.SOURCE_READ_TOKEN }}
           persist-credentials: false
           path: app
       - name: Regression tests for beta25
@@ -82,7 +82,7 @@ jobs:
     steps:
       - name: Check private-source access configuration
         env:
-          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN }}
         shell: bash
         run: |
           if [ -z "$SOURCE_READ_TOKEN" ]; then
@@ -94,7 +94,7 @@ jobs:
         with:
           repository: cuijunhao20000307-web/ANIMEX
           ref: beta/1.0.8-beta.25
-          token: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          token: ${{ secrets.SOURCE_READ_TOKEN }}
           persist-credentials: false
           path: app
       - name: Install network-enabled Switch FFmpeg
