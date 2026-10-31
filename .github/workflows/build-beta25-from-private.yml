@@ -1,0 +1,187 @@
+name: ANIMEX Beta25 private-source public-runner build
+
+on:
+  push:
+    branches:
+      - ci/build-beta25-from-private-source
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: animex-beta25-public-runner
+  cancel-in-progress: false
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check private-source access configuration
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+        run: |
+          if [ -z "$SOURCE_READ_TOKEN" ]; then
+            echo "Private checkout token is unavailable. Configure SOURCE_READ_TOKEN with read-only access to the ANIMEX source repository."
+            exit 1
+          fi
+      - name: Checkout PRIVATE source (never upload source)
+        uses: actions/checkout@v4
+        with:
+          repository: cuijunhao20000307-web/ANIMEX
+          ref: beta/1.0.8-beta.25
+          token: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          persist-credentials: false
+          path: app
+      - name: Regression tests for beta25
+        working-directory: app
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq > /dev/null
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq g++ libcurl4-openssl-dev libavutil-dev libjpeg-dev libpng-dev libwebp-dev python3-pil ffmpeg > /dev/null
+          bash tests/host/run_107.sh
+          python3 tests/host/test_catalog_navigation.py
+          python3 tests/host/test_anime_hls.py
+          bash tests/host/run_cover_cache.sh
+          python3 tests/host/test_108_port_post.py
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_otage_parser.cpp -o /tmp/test_otage_parser
+          /tmp/test_otage_parser
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_otage_lines.cpp -o /tmp/test_otage_lines
+          /tmp/test_otage_lines
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_otage_beta7.cpp -o /tmp/test_otage_beta7
+          /tmp/test_otage_beta7
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_otage_native_backdrop.cpp -o /tmp/test_otage_native_backdrop
+          /tmp/test_otage_native_backdrop
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_otage_quality.cpp -o /tmp/test_otage_quality
+          /tmp/test_otage_quality
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta10_updater.cpp -o /tmp/test_updater
+          /tmp/test_updater
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta15.cpp -o /tmp/test_artwork
+          /tmp/test_artwork
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta16.cpp source/nxanime_source/detail_backdrop.cpp -o /tmp/test_fallback
+          /tmp/test_fallback
+          c++ -std=c++17 -O2 -pthread -Isource/nxanime_source tests/host/test_108beta18.cpp -o /tmp/test_diagnostics
+          /tmp/test_diagnostics
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta19.cpp -o /tmp/test_worker
+          /tmp/test_worker
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta22.cpp -o /tmp/test_same_poster
+          /tmp/test_same_poster
+          c++ -std=c++17 -O2 -Isource/nxanime_source tests/host/test_108beta24.cpp source/nxanime_source/detail_backdrop.cpp -o /tmp/test_legacy
+          /tmp/test_legacy
+          python3 tests/host/test_108beta25.py
+          python3 tests/host/test_108beta25_angel_beats.py
+          python3 tests/host/test_otage_live.py
+
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    container:
+      image: mirror.gcr.io/devkitpro/devkita64:latest
+    steps:
+      - name: Check private-source access configuration
+        env:
+          SOURCE_READ_TOKEN: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+        shell: bash
+        run: |
+          if [ -z "$SOURCE_READ_TOKEN" ]; then
+            echo "Private source read token missing. Nothing will be published."
+            exit 1
+          fi
+      - name: Checkout PRIVATE source (never upload source)
+        uses: actions/checkout@v4
+        with:
+          repository: cuijunhao20000307-web/ANIMEX
+          ref: beta/1.0.8-beta.25
+          token: ${{ secrets.SOURCE_READ_TOKEN || secrets.TOKEN }}
+          persist-credentials: false
+          path: app
+      - name: Install network-enabled Switch FFmpeg
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 -o /tmp/switch-ffmpeg.pkg.tar.zst https://github.com/xfangfang/wiliwili/releases/download/v0.1.0/switch-ffmpeg-7.1-1-any.pkg.tar.zst
+          curl -fsSL --retry 3 -o /tmp/zstd.deb https://deb.debian.org/debian/pool/main/libz/libzstd/zstd_1.5.4+dfsg2-5_amd64.deb
+          dpkg-deb -x /tmp/zstd.deb /tmp/zstd-root
+          mkdir -p /tmp/ffmpeg-pkg
+          /tmp/zstd-root/usr/bin/zstd -d -c /tmp/switch-ffmpeg.pkg.tar.zst | tar -xf - -C /tmp/ffmpeg-pkg
+          cp -a /tmp/ffmpeg-pkg/opt/devkitpro/portlibs/switch/. "$DEVKITPRO/portlibs/switch/"
+      - name: Build and verify NRO without public source diagnostics
+        working-directory: app/source
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$DEVKITPRO/devkitA64/bin:$DEVKITPRO/tools/bin:$PATH"
+          export PORTLIBS="$DEVKITPRO/portlibs/switch"
+          export PKG_CONFIG_PATH="$DEVKITPRO/portlibs/switch/lib/pkgconfig"
+          if ! make -j2 > /tmp/private-anime-build.log 2>&1; then
+            echo "Private-source build failed; source diagnostics intentionally not published."
+            exit 1
+          fi
+          test -s ANIMEX.nro
+          python3 ../.github/scripts/verify_nro.py ANIMEX.nro 1.0.8-beta.25
+          cp ANIMEX.nro ../../ANIMEX-1.0.8-beta.25.nro
+      - name: Upload compiled NRO only
+        uses: actions/upload-artifact@v4
+        with:
+          name: ANIMEX-1.0.8-beta.25-nro
+          path: ANIMEX-1.0.8-beta.25.nro
+          if-no-files-found: error
+
+  publish-beta:
+    needs: [build, regression]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ANIMEX-1.0.8-beta.25-nro
+          path: beta-release
+      - name: Publish verified NRO and Beta update ONLY
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          version=1.0.8-beta.25
+          asset="ANIMEX-$version.nro"
+          test -s "beta-release/$asset"
+          sha="$(sha256sum "beta-release/$asset" | awk '{print $1}')"
+          repo="$GITHUB_REPOSITORY"
+          if gh release view "$version" --repo "$repo" > /dev/null 2>&1; then
+            gh release upload "$version" "beta-release/$asset" --repo "$repo" --clobber
+          else
+            gh release create "$version" "beta-release/$asset" --repo "$repo" --target main --title "ANIMEX v$version" --prerelease --notes "Beta25: 修复《天使的心跳》1878 选集为空；兼容 /detail/1878 和旧 /GV1878/，严格同编号原版 API 回退，保留 Beta24 其他功能。"
+          fi
+          gh api "repos/$repo/releases/tags/$version" --jq '.prerelease' | grep -qx true
+          tmp="$(mktemp -d)"
+          gh release download "$version" --repo "$repo" --pattern "$asset" --dir "$tmp" --clobber
+          cmp "beta-release/$asset" "$tmp/$asset"
+          stable_sha="$(gh api "repos/$repo/contents/version.json" --jq .sha)"
+          gh api "repos/$repo/contents/beta.json" --jq .content | tr -d '\n' | base64 -d > beta-old.json
+          python3 - "$version" "$sha" "$repo" <<'PY'
+          import json,sys
+          from pathlib import Path
+          version, sha, repo = sys.argv[1:]
+          old=json.loads(Path("beta-old.json").read_text())
+          assert isinstance(old,list)
+          record={"version":version, "channel":"beta",
+                  "download_url":f"https://github.com/{repo}/releases/download/{version}/ANIMEX-{version}.nro",
+                  "download_url_cn":"", "download_url_backup":"",
+                  "notes":"Beta25：修复天使的心跳 1878 选集解析，保留 Beta24 其他功能",
+                  "sha256":sha}
+          out=[record]+[item for item in old if item.get("version")!=version]
+          Path("beta-new.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
+          PY
+          current_sha="$(gh api "repos/$repo/contents/beta.json" --jq .sha)"
+          gh api --method PUT "repos/$repo/contents/beta.json" -f "message=Publish ANIMEX $version Beta update" -f "content=$(base64 -w0 beta-new.json)" -f "sha=$current_sha" -f branch=main > /dev/null
+          gh api "repos/$repo/contents/beta.json" --jq .content | tr -d '\n' | base64 -d > beta-confirm.json
+          python3 - "$version" "$sha" <<'PY'
+          import json,sys
+          data=json.load(open("beta-confirm.json"))
+          assert any(x.get("version")==sys.argv[1] and x.get("sha256")==sys.argv[2] for x in data)
+          PY
+          test "$stable_sha" = "$(gh api "repos/$repo/contents/version.json" --jq .sha)"
