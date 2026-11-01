@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.28",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.28/ANIMEX-1.0.8-beta.28.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.28/ANIMEX-1.0.8-beta.28.nro",
+    "notes": "1.0.8 beta28：修正 GPU 回退后的旧图像缓冲和帧生命周期，校验行距及缓冲边界；控制栏隐藏时减少 CPU 重绘；保留 beta27 黑边修复与既有功能",
+    "sha256": "82fa93f009c1384576b843fc590b56d36855184003a48dd2c0bb981426bbddde"
+  },
+  {
     "version": "1.0.8-beta.27",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.27/ANIMEX-1.0.8-beta.27.nro",
