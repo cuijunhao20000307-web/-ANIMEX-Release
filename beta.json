@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.26",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.26/ANIMEX-1.0.8-beta.26.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.26/ANIMEX-1.0.8-beta.26.nro",
+    "notes": "1.0.8 beta26：封面预载、分类首批显示、HLS 大幅度定位和联通分片兼容；新增 NVDEC 硬解与 GPU 绘制，失败自动回退；测试端口改名在线动漫2",
+    "sha256": "af6ef37a8cb2bba236245ccd7cfbaa25ff25c0179bca307cd56dc33998cea121"
+  },
+  {
     "version": "1.0.8-beta.25",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.25/ANIMEX-1.0.8-beta.25.nro",
