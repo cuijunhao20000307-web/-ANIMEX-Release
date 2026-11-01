@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.27",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.27/ANIMEX-1.0.8-beta.27.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.27/ANIMEX-1.0.8-beta.27.nro",
+    "notes": "1.0.8 beta27：播放稳定性热修：硬解完整缓冲、单线程与 GPU 窗口回退修正；去除播放器片名集数黑边；保留 beta26 功能",
+    "sha256": "6801d753a1c81325e0035126c941e979337a0469fd13a8aba93c1aaad3ab4a71"
+  },
+  {
     "version": "1.0.8-beta.26",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.26/ANIMEX-1.0.8-beta.26.nro",
