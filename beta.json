@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.25",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.25/ANIMEX-1.0.8-beta.25.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.25/ANIMEX-1.0.8-beta.25.nro",
+    "notes": "1.0.8 beta25：修复 Angel Beats! 1878 集数空白，兼容 /detail/1878 和同编号原版 API 回退；保留 beta24 的封面、主题和播放逻辑",
+    "sha256": "686c2d1cdb27954656b4fdc22a1698e4451e3c3debb3a7a02e6d7a39b1d283ae"
+  },
+  {
     "version": "1.0.8-beta.24",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.24/ANIMEX-1.0.8-beta.24.nro",
