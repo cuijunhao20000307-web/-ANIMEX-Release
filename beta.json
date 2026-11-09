@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.31",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.31/ANIMEX-1.0.8-beta.31.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.31/ANIMEX-1.0.8-beta.31.nro",
+    "notes": "基于正式版 1.0.7 的软件解码与帧缓冲路径排查退出播放器和切换端口崩溃。暂时关闭硬解码及 GPU 绘制，CPU 占用可能增加。Switch 编译和回归通过，退出与切换端口仍需真机验证。",
+    "sha256": "13ee48f33be779371bd65ff2b81389a1ed559920d8c517070e68753a08efac0d"
+  },
+  {
     "version": "1.0.8-beta.30",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.30/ANIMEX-1.0.8-beta.30.nro",
