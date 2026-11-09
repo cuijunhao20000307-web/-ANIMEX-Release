@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.0.8-beta.30",
+    "channel": "beta",
+    "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.30/ANIMEX-1.0.8-beta.30.nro",
+    "download_url_cn": "",
+    "download_url_backup": "https://ghproxy.net/https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.30/ANIMEX-1.0.8-beta.30.nro",
+    "notes": "修复 GPU 回退失败后的帧缓冲访问。硬解打开失败时在同一视频轨重试软解，播放中回退时重新同步音画。电影 HLS 大幅快进等待带有效时间戳的目标画面。Switch 编译和自动回归已通过，OLED／Lite 真机仍待验证。",
+    "sha256": "7e9cc0294a7570cd6bcb874f27bd8b1a4a2604e38fedc2657fdf482f7ff5b065"
+  },
+  {
     "version": "1.0.8-beta.28",
     "channel": "beta",
     "download_url": "https://github.com/cuijunhao20000307-web/-ANIMEX-Release/releases/download/1.0.8-beta.28/ANIMEX-1.0.8-beta.28.nro",
